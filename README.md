@@ -1,5 +1,6 @@
 # Data-Structures-
-Data structures in Java - ongoing
+Data structures in Java - ongoing.
+
 This is a personal project of mine to get better at Data Structures.
 I plan on compiling examples of all the data structures in Java
 
