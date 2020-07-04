@@ -36,7 +36,7 @@ This project will include folders
   
   -Shell sort
   
-  -Bucket sort (coming soon)
+  -Bucket sort 
   
 4. Stack
 
