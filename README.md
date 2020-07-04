@@ -58,7 +58,11 @@ This project will include folders
   
   -ChainedHashtable has chaining implementation to avoid collisions
   
- 7. Search Algorithms (coming soon)
+ 7. Search Algorithms 
+ 
+  -Linear Search Algorithm
+  
+  -Binary Search Algorithm
  
  8. Trees (Coming Soon)
  
