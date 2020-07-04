@@ -1,0 +1,8 @@
+Search algorithms find a value for any data structures
+
+Binary Search
+1. standard search
+2. requires data to be sorted
+3. chooses element in the middle if the array and compares it against search value
+4. if element is greater than value - search left
+5. if element less than value - search right
