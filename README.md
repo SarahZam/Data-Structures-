@@ -64,6 +64,16 @@ This project will include folders
   
   -Binary Search Algorithm
  
- 8. Trees (Coming Soon)
+ 8. Trees 
+ 
+ -Made Tree and TreeNode
+ 
+ -Insertion od data in tree
+ 
+ -In-order, pre-order,post-order Traversals
+ 
+ -get, min, max methods
+ 
+ -deleting data that has no child, 1 child and 2 children.
  
  9. Heaps (Coming Soon)
