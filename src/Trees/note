@@ -1,0 +1,112 @@
+Introduction to trees
+
+How to organize data
+it's either a data structure or abstract data type
+so basically a gray area
+ oh well
+ 
+ 
+ ---------15--------root
+ ------/   |   \----
+------22   4   17---
+----/    / | \  | \- edge
+---19   9  18 3 11 0- leaf
+
+all the numbers are nodes
+nodes have children
+15 has 3 children - 22,4,17
+nodes can have one parent 22 parent is 15
+not allowed to have more than one parent
+root does not have parent - can be one root. Root here is 15
+17 subtree consist of 17,11,0
+4 subtree is 4,9,18,3,25,7,14
+dephs - number of edges
+height - longest deph
+level = deph
+
+
+//Binary Search tree
+
+1. o,1,2 children
+2. left child and right child
+3. in practice we use binary search trees
+
+---------15-------
+-------/----\-----
+------22-----4----
+-----/------/--\--
+----19-----18---3-
+------------\-----
+------------14----
+
+binary tree is complete if every level except last level has two children last level has left children
+
+full binary tree has to have two children
+
+Binary Search trees
+-can perform insertions, deletions,retrievals in O(logn)
+- left < parent & right > parent
+
+insert 25,20,15,27,30,29,26,22,32
+
+
+Traversing tree
+
+level-visit nodes on each level - not used often
+
+pre-order-visit the root of every subtree first
+post-order-visit root of every subtree last
+In-order-visit left child then root then last child-sorted 
+
+DELETING
+-node is a leaf
+-node has one child
+-node has two children
+
+Deleting 15
+		/*----------25---------
+		 * --------/---\-------
+		 * ------20-----27------
+		 *------/--\----/--\-----
+		 *-----15--22--26---30
+		 *-------\----------/-\-
+		 *-------17--------29-32
+		 */
+Just null out the parent's leftchild/rightchild
+		/*----------25---------
+		 * --------/---\-------
+		 * ------20-----27------
+		 *------/--\----/--\-----
+		 *-----15--22--26---30
+		 *------------------/-\-
+		 *-----------------29-32
+		 */
+		 
+Deleting 15
+
+		/*----------25---------
+		 * --------/---\-------
+		 * ------20-----27------
+		 *------/--\----/--\-----
+		 *-----15--22--26---30
+		 *-------\----------/-\-
+		 *-------17--------29-32
+		 */
+		 child goes up
+		/*----------25---------
+		 * --------/---\-------
+		 * ------20-----27------
+		 *------/--\----/--\-----
+		 *-----17--22--26---30
+		 *------------------/-\-
+		 *-----------------29-32
+		 */
+		 
+Deleting 2 children
+
+-need to figure out replacement node
+-want minimal disruption
+-left or subtree
+-left subtree-have to take largest value
+-right subtree- smallest value
+-choose one and stick to it
